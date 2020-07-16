@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegularExpressionEngine", "RegularExpressionEngine\RegularExpressionEngine.csproj", "{8AA7A4F5-BAD8-42FE-9F08-668A2D8E74D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegularExpressionTest", "RegularExpressionTest\RegularExpressionTest.csproj", "{32EDA517-B0AF-4F80-B7B3-7BC8254F5680}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFA2DFA", "NFA2DFA\NFA2DFA.csproj", "{17BE3C2A-06F3-424B-B329-8DCA3301A49B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegularExpressionGUI", "RegularExpressionGUI\RegularExpressionGUI.csproj", "{F3F67561-6EEF-4383-BEC0-F6D5258324A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8AA7A4F5-BAD8-42FE-9F08-668A2D8E74D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AA7A4F5-BAD8-42FE-9F08-668A2D8E74D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AA7A4F5-BAD8-42FE-9F08-668A2D8E74D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AA7A4F5-BAD8-42FE-9F08-668A2D8E74D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32EDA517-B0AF-4F80-B7B3-7BC8254F5680}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32EDA517-B0AF-4F80-B7B3-7BC8254F5680}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32EDA517-B0AF-4F80-B7B3-7BC8254F5680}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32EDA517-B0AF-4F80-B7B3-7BC8254F5680}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17BE3C2A-06F3-424B-B329-8DCA3301A49B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17BE3C2A-06F3-424B-B329-8DCA3301A49B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17BE3C2A-06F3-424B-B329-8DCA3301A49B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17BE3C2A-06F3-424B-B329-8DCA3301A49B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3F67561-6EEF-4383-BEC0-F6D5258324A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3F67561-6EEF-4383-BEC0-F6D5258324A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3F67561-6EEF-4383-BEC0-F6D5258324A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3F67561-6EEF-4383-BEC0-F6D5258324A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

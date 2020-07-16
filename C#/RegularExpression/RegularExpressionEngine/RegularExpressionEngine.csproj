@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8AA7A4F5-BAD8-42FE-9F08-668A2D8E74D8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RegularExpressionEngine</RootNamespace>
+    <AssemblyName>RegularExpressionEngine</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlternationCharSetExpression.cs" />
+    <Compile Include="AlternationExpression.cs" />
+    <Compile Include="AnyCharExpression.cs" />
+    <Compile Include="AssertionExpression.cs" />
+    <Compile Include="Common\CodeContract.cs" />
+    <Compile Include="ConcatenationExpression.cs" />
+    <Compile Include="EmptyExpression.cs" />
+    <Compile Include="KleeneStarExpression.cs" />
+    <Compile Include="NFA\CompactCharSetManager.cs" />
+    <Compile Include="NFA\NFAAnyCharEdge.cs" />
+    <Compile Include="NFA\NFAAssertEdge.cs" />
+    <Compile Include="NFA\NFAConverter.cs" />
+    <Compile Include="NFA\NFAEdge.cs" />
+    <Compile Include="NFA\NFAEdgeType.cs" />
+    <Compile Include="NFA\NFAModel.cs" />
+    <Compile Include="NFA\NFAOtherEdge.cs" />
+    <Compile Include="NFA\NFAState.cs" />
+    <Compile Include="OtherExpression.cs" />
+    <Compile Include="Parser\RegexParser.cs" />
+    <Compile Include="Parser\SpecialChar.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Regex\Capture.cs" />
+    <Compile Include="Regex\MatchResult.cs" />
+    <Compile Include="Regex\Regex.cs" />
+    <Compile Include="RegularExpression.cs" />
+    <Compile Include="RegularExpressionConverter.cs" />
+    <Compile Include="RegularExpressionType.cs" />
+    <Compile Include="StringLiteralExpression.cs" />
+    <Compile Include="SymbolExpression.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
